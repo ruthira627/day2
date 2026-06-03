@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Problem6 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int age = sc.nextInt();
+        int salary = sc.nextInt();
+        boolean hasActiveLoan = sc.nextBoolean();
+
+        if (age >= 21 && salary >= 30000 && !hasActiveLoan) {
+            System.out.println("Eligible for Home Loan");
+        } else {
+            System.out.println("Not Eligible for Home Loan");
+        }
+    }
+}
