@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Problem7 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int sub1 = sc.nextInt();
+        int sub2 = sc.nextInt();
+        int sub3 = sc.nextInt();
+        int sub4 = sc.nextInt();
+        int sub5 = sc.nextInt();
+
+        double average = (sub1 + sub2 + sub3 + sub4 + sub5) / 5.0;
+
+        if (sub1 >= 35 && sub2 >= 35 && sub3 >= 35 &&
+            sub4 >= 35 && sub5 >= 35 && average >= 50) {
+
+            System.out.println("Pass");
+        } else {
+            System.out.println("Fail");
+        }
+    }
+}
